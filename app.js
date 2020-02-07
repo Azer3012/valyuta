@@ -37,4 +37,4 @@ function gun(value){
             console.log(gun3)
     }
 }
-gun(3);
+gun();
