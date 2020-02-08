@@ -2,39 +2,34 @@ let gun1="SEHER: AZN,EUR,USD"+" AXSAM:EUR,AZN,USD";
 let gun2="SEHER: EURO,USD,AZN"+" AXSAM:USD,EURO,AZN";
 let gun3="SEHER: USD,AZN,EURO"+" AXSAM:AZN,USD,EURO";
 
-
-function gun(value){
-    if(value>31){
-        console.log("bele bir gun yoxdu")
-    }
-    switch(value){
-        case 1:
-        case 4:
-        case 7:
-        case 10:
-        case 13:
-        case 16:
-        case 19:
-        case 22:
-        case 25:
-        case 28:
-        case 31:
-            console.log(gun1);
-            break;
-        case 2:
-        case 5:
-        case 8:
-        case 11:
-        case 14:
-        case 17:
-        case 20:
-        case 23:
-        case 26:
-        case 29:
-            console.log(gun2);
-            break;
-        default:
-            console.log(gun3)
+function day(num){
+function day1(i){
+    for(var i=1;i<=31;i+=3){
+        if(num===i){
+            console.log(gun1)
+        }
     }
 }
-gun();
+day1();
+function day2(j){
+    for(var j=2;j<=31;j+=3){
+        if(num===j){
+            console.log(gun2)
+        }
+    }
+
+}
+day2();
+function day3(r){
+    for(var r=3;r<=31;r+=3){
+       if(num===r){
+           console.log(gun3)
+       }
+    }
+
+}
+day3();
+
+   
+}
+day();
